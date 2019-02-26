@@ -1,0 +1,9 @@
+{loop plugins::categoryinfo($_catid) $c}
+<div class="col-md-4 about-left wow fadeInLeft animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+<a href="{$c[url]}"><img src="{$c[image]}"  /></a>			
+</div>
+<div class="col-md-8 about-right wow fadeInRight animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+<p>{cut(strip_tags($c['categorycontent']),268)}。。。</p>
+</div>
+{/loop}
+

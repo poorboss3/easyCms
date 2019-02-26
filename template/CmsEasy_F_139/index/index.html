@@ -1,0 +1,128 @@
+{template 'header.html'}
+
+{template 'system/slide.html'}
+
+<script src="{$skin_path}/js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<link href="{$skin_path}/css/wow.css" rel="stylesheet">
+
+<!--about-->
+	<div class="about" id="about">
+	{tag_首页第一行栏目}
+		<div class="container">
+			{tag_首页第一行栏目图片说明}
+			<div class="clearfix"> </div>
+		</div>	
+	</div>
+	<!--//about-->
+	<!--team-->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="title">{tag_首页第二行栏目}</h3>
+			<div class="team-info">
+				{tag_首页第二行栏目图片4条}
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//team-->
+
+	<!--services-->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="title">{tag_首页第三行栏目}</h3>
+			<div class="row work-row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+					<div class="work-grids-img">
+						<span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+					</div>	
+					<div class="caption work-captn">
+						{tag_首页第三行子栏目一}					
+					 </div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+					<div class="work-grids-img">
+						<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+					</div>	
+					<div class="caption work-captn">
+						{tag_首页第三行子栏目二}			
+					 </div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+					<div class="work-grids-img">
+						<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+					</div>	
+					<div class="caption work-captn">
+						{tag_首页第三行子栏目三}				
+					 </div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+					<div class="work-grids-img">
+						<span class="glyphicon glyphicon-sound-5-1" aria-hidden="true"></span>
+					</div>	
+					<div class="caption work-captn">
+						{tag_首页第三行子栏目四}				
+					 </div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+					<div class="work-grids-img">
+						<span class="glyphicon glyphicon-oil" aria-hidden="true"></span>
+					</div>	
+					<div class="caption work-captn">
+						{tag_首页第三行子栏目五}			
+					 </div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+					<div class="work-grids-img">
+						<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+					</div>	
+					<div class="caption work-captn">
+						{tag_首页第三行子栏目六}			
+					 </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>		
+		</div>
+	</div>	
+	<!--//services-->
+	<!--portfolio-->
+	<div class="portfolio" id="gallery">		
+	{tag_首页第四行栏目}
+		<div class="container">
+			<div class="portfolio-grids">	
+				{tag_首页第四行栏目图片6条}
+				<div class="clearfix"> </div>
+			</div>				
+		</div>
+	</div>	
+	<!--//portfolio-->
+	<!--testimonials-->
+	<div class="testimonials">
+		<div class="container">
+			<h3 class="title">{tag_首页第五行栏目}</h3>
+			<div class="sap_tabs">	
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					{tag_首页第五行栏目内容切换10条}
+				</div>	
+			</div>		  
+		</div>
+		<script src="{$skin_path}/js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+			</script>		
+	</div>
+	<!--//testimonials-->
+
+
+
+
+
+{template 'footer.html'}
